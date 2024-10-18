@@ -12,7 +12,7 @@ app.use(cors({
     origin:'https://nestech-e-commerce-store-frontend.vercel.app' || 'http://localhost:3000',
     credentials: true,
 }));
-
+console.log("server is running")
 // Middleware setup
 app.use(express.json());
 app.use(cookieParser());
