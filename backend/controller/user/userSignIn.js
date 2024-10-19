@@ -3,6 +3,11 @@ const userModel = require('../../models/userModel')
 const jwt = require('jsonwebtoken');
 
 async function userSignInController(req,res){
+    res.setHeader('Access-Control-Allow-Origin', 'https://nestech-e-commerce-store-frontend.vercel.app'); // Allow only your frontend domain
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); // Allowed methods
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Allowed headers
+  
+    
     try{
         const { email , password} = req.body
 
