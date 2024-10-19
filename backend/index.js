@@ -13,10 +13,11 @@ app.use(cors({
     methods: ['GET', 'POST'],
     credentials: true,
 }));
-app.get('/api, (req, res) => {
+app.get('/api', (req, res) => {
   // Your API logic here
-  res.status(200).json({ message: 'Product added to cart!' });
+  res.status(200).json({ message: 'Product is running!' });
 });
+app.options('*', cors()); 
 // Middleware setup
 app.use(express.json());
 app.use(cookieParser());
