@@ -8,7 +8,7 @@ const app = express();
 
 // CORS setup
 app.use(cors({
-    origion:'https://nestech-e-commerce-store.vercel.app/api/signin' || 'http:localhost:3000',
+    origin:'https://nestech-e-commerce-store.vercel.app/api/signin' || 'http:localhost:3000',
     credentials: true, // this will disable CORS checks    // additional options...
 });
 console.log("server is running")
