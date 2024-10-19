@@ -14,10 +14,79 @@ app.use(cors({
     header: { "Access-Control-Allow-Origin":"https://nestech-e-commerce-store-frontend.vercel.app"},
     credentials: true,
 }));
-app.get('/api', (req, res) => {
+app.get('/api/signin', (req, res) => {
   // Your API logic here
   res.status(200).json({ message: 'Product is running!' });
 });
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+app.get('/api/signin', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product is running!' });
+});
+
 app.options('*', cors()); 
 // Middleware setup
 app.use(express.json());
