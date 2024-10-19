@@ -11,6 +11,8 @@
       "src":"/(.*)",
       "dest":"/index.js",
       "method":["GET","POST","PUT","DELETE","PATCH","OPTIONS"],
+      "origin": "https://nestech-e-commerce-store-frontend.vercel.app",
+  "credentials": true,
       "headers":{
         "Access-Control-Allow-Origin":"*"
       }
