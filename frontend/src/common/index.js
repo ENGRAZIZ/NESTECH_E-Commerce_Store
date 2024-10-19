@@ -3,7 +3,7 @@ const backendDomin = "https://nestech-e-commerce-store-backend.vercel.app" ||"ht
 
 const SummaryApi = {
     signUP : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/signup`,
+        url : `${backendDomin}/api/signup`,
         method : "post"
     },
     signIn : {
