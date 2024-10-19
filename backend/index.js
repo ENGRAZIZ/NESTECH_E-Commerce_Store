@@ -13,7 +13,7 @@ app.use(cors({
     methods: ['GET', 'POST'],
     credentials: true,
 }));
-app.get('/api/countAddToCartProduct', (req, res) => {
+app.get('/api, (req, res) => {
   // Your API logic here
   res.status(200).json({ message: 'Product added to cart!' });
 });
