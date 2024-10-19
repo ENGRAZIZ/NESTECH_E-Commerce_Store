@@ -7,9 +7,9 @@ const router = require('./routes');
 const app = express();
 
 // CORS setup
-app.use(fetch('https://nestech-e-commerce-store.vercel.app/api/signin', {
-    method: 'POST',
-    mode: 'no-cors', // this will disable CORS checks    // additional options...
+app.use(cors({
+    origin:'https://nestech-e-commerce-store.vercel.app/api/signin' || 'http:localhost:3000',
+    credentials: true, // this will disable CORS checks    // additional options...
 });
 console.log("server is running")
 // Middleware setup
