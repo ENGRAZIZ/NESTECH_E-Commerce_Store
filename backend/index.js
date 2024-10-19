@@ -10,9 +10,13 @@ const app = express();
 // CORS setup
 app.use(cors({
     origin: "https://nestech-e-commerce-store-frontend.vercel.app" || 'http://localhost:3000',
+    methods: ['GET', 'POST'],
     credentials: true,
 }));
-
+app.get('/api/countAddToCartProduct', (req, res) => {
+  // Your API logic here
+  res.status(200).json({ message: 'Product added to cart!' });
+});
 // Middleware setup
 app.use(express.json());
 app.use(cookieParser());
