@@ -1,0 +1,4 @@
+{
+    // This enables ESLint for the project
+    "eslint.enable": true
+}

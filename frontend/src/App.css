@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customShadow{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/***user table***/
+.userTable{
+    @apply bg-white;
+    
+}
+.userTable th{
+    @apply border text-base font-medium text-left pl-4;
+}
+.userTable td{
+    @apply border text-base text-left pl-4;
+}
+.userTable td:nth-child(1),
+.userTable th:nth-child(1),
+.userTable td:nth-child(6),
+.userTable th:nth-child(6) {
+    @apply text-center;
+}
+.userTable th:nth-child(4),
+.userTable td:nth-child(4) {
+    /* max-width: 200px; */
+}
+
+/**scrollbar hidden****/
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+
+.table11 {
+    /* display: block; */
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: separate;
+    border-spacing: 5px;
+   
+}
+
+.table11 tr td:nth-child(1){
+    width: 20px; /* Set fixed width for 1st and 3rd columns */
+    padding: 0px;
+}
+
+.table11 td:nth-child(2){
+    width: 100px; /* Set fixed width for 2nd and 4th columns */
+    border-bottom: solid 2px black;
+    padding-left: 5%;
+    margin: 2px;
+}
+.table11  td:nth-child(5){
+width:100%;
+}
+
