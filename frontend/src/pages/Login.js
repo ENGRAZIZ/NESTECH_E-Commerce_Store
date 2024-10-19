@@ -37,7 +37,8 @@ const Login = () => {
             method : SummaryApi.signIn.method,
             credentials : 'include',
             headers :{
-                "content-type" : "application/json"
+                "content-type" : "application/json",
+                "Access-Control-Allow-Origin":"nestech-e-commerce-store-backend.vercel.app"
             },
             body : JSON.stringify(data)
         })
