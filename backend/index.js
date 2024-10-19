@@ -14,78 +14,28 @@ app.use(cors({
     header: { "Access-Control-Allow-Origin":"https://nestech-e-commerce-store-frontend.vercel.app"},
     credentials: true,
 }));
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
-app.get('/api/signin', (req, res) => {
-  // Your API logic here
-  res.status(200).json({ message: 'Product is running!' });
-});
+export default function handler(req, res) {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', 'https://nestech-e-commerce-store-frontend.vercel.app'); // Allow only your frontend domain
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); // Allowed methods
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Allowed headers
+  
+  // Handle preflight requests (OPTIONS)
+  if (req.method === 'OPTIONS') {
+    // Respond to preflight request
+    res.status(200).end();
+    return;
+  }
+
+  // Handle actual request logic here
+  if (req.method === 'POST') {
+    // Example: Handle sign-in
+    res.status(200).json({ message: 'Signin successful' });
+  } else {
+    res.status(405).end(); // Method Not Allowed
+  }
+}
+
 
 app.options('*', cors()); 
 // Middleware setup
