@@ -1,21 +1,20 @@
 {
-"version":2,
-  "build":[
+  "functions": {
+    "api/*.js": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
     {
-      "src":"/index.js",
-      "use":"@vercel/node"
+      "source": "/api/(.*)",
+      "destination": "/api/"
     }
   ],
-  "routes":[
+  "routes": [
     {
-      "src":"/(.*)",
-      "dest":"/index.js",
-      "method":["GET","POST","PUT","DELETE","PATCH","OPTIONS"],
-      "origin": "https://nestech-e-commerce-store-frontend.vercel.app",
-  "credentials": true,
-      "headers":{
-        "Access-Control-Allow-Origin":"nestech-e-commerce-store-backend.vercel.app"
-      }
+      "src": "/api/(.*)",
+      "dest": "/api/"
     }
   ]
 }
