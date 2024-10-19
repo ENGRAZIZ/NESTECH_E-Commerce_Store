@@ -11,6 +11,7 @@ const app = express();
 app.use(cors({
     origin: "https://nestech-e-commerce-store-frontend.vercel.app" || 'http://localhost:3000',
     methods: ['GET', 'POST','OPTIONS'],
+    header: { "Access-Control-Allow-Origin":"https://nestech-e-commerce-store-frontend.vercel.app"},
     credentials: true,
 }));
 app.get('/api', (req, res) => {
