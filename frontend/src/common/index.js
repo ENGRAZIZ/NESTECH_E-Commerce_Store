@@ -7,79 +7,79 @@ const SummaryApi = {
         method : "post"
     },
     signIn : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/signin`,
+        url : `${backendDomin}/api/signin`,
         method : "post"
     },
     current_user : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/user-details`,
+        url : `${backendDomin}/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/userLogout`,
+        url : `${backendDomin}/api/userLogout`,
         method : 'get'
     },
     allUser : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/all-user`,
+        url : `${backendDomin}/api/all-user`,
         method : 'get'
     },
     updateUser : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/update-user`,
+        url : `${backendDomin}/api/update-user`,
         method : "post"
     },
     uploadProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app}/api/upload-product`,
+        url : `${backendDomin}/api/upload-product`,
         method : 'post'
     },
     allProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/get-product`,
+        url : `${backendDomin}/api/get-product`,
         method : 'get'
     },
     updateProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/update-product`,
+        url : `${backendDomin}/api/update-product`,
         method  : 'post'
     },
     categoryProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/get-categoryProduct`,
+        url : `${backendDomin}/api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/category-product`,
+        url : `${backendDomin}/api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/product-details`,
+        url : `${backendDomin}/api/product-details`,
         method : 'post'
     },
     addToCartProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/addtocart`,
+        url : `${backendDomin}/api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/countAddToCartProduct`,
+        url : `${backendDomin}/api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/view-card-product`,
+        url : `${backendDomin}/api/view-card-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/update-cart-product`,
+        url : `${backendDomin}/api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/delete-cart-product`,
+        url : `${backendDomin}/api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/search`,
+        url : `${backendDomin}/api/search`,
         method : 'get'
     },
     filterProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/filter-product`,
+        url : `${backendDomin}/api/filter-product`,
         method : 'post'
     },
     deleteProduct : {
-        url : `https://nestech-e-commerce-store-backend.vercel.app/api/delete-product`,
+        url : `${backendDomin}/api/delete-product`,
         method : 'post'
     }
 }
