@@ -10,7 +10,7 @@ const AdminProductCard = ({
     const [editProduct,setEditProduct] = useState(false)
 
   return (
-    <div className='bg-white p-4 rounded '>
+    <div className='bg-white p-4 rounded h-64'>
        <div className='w-40'>
             <div className='w-32 h-32 flex justify-center items-center'>
               <img src={data?.productImage[0]} alt={data?.productImage[0]} className='mx-auto object-fill h-full'/>   

@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import bannerimage0 from '../assets/banner/banner (1).jpeg';
-import bannerimage1 from '../assets/banner/banner (1).webp';
-import bannerimage2 from '../assets/banner/banner (2).webp';
-import bannerimage3 from '../assets/banner/banner (3).webp';
-import bannerimage4 from '../assets/banner/banner (4).webp';
-import bannerimage5 from '../assets/banner/banner (5).webp';
-import bannerimage6 from '../assets/banner/banner (6).webp';
-import bannerimage7 from '../assets/banner/banner (7).webp';
-import bannerimage8 from '../assets/banner/banner (8).webp';
-import bannerimage9 from '../assets/banner/banner (9).webp';
-import bannerimage10 from '../assets/banner/banner (10).webp';
+import bannerimage0 from '../assets/banner/banner (1).webp';
+import bannerimage1 from '../assets/banner/banner (2).jpg';
+import bannerimage2 from '../assets/banner/banner (3).jpg';
+import bannerimage3 from '../assets/banner/banner (4).jpg';
+import bannerimage4 from '../assets/banner/banner (5).jpg';
+import bannerimage5 from '../assets/banner/banner (6).webp';
+import bannerimage6 from '../assets/banner/banner (7).jpeg';
+import bannerimage7 from '../assets/banner/banner (8).jpg';
+import bannerimage8 from '../assets/banner/banner (9).jpg';
+import bannerimage9 from '../assets/banner/banner (10).jpg';
+import bannerimage10 from '../assets/banner/banner (11).jpg';
 
 import bannerimage1Mobile from '../assets/banner/mobile (1).jpg';
 import bannerimage2Mobile from '../assets/banner/mobile (1).jpeg';
