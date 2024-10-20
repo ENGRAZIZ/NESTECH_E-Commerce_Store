@@ -153,11 +153,12 @@ const BannerProduct = () => {
 
     return (
         <div className='flex container mx-auto px-4 rounded'>
-            <div className='flex-1 p-4 hidden md:block'>
+            <div className='flex-1 p-4 hidden md:block relative'>  {/* Added 'relative' here */}
                 {/* Description Area */}
                 <h2 className='text-xl font-bold mb-2'>{productTitles[currentImage]}</h2>
                 <p className='mb-4'>{productDetails[currentImage]}</p>
-                <a href={'/'} className='bg-blue-500 text-white px-4 py-2 rounded'>
+                <a href={'/'} 
+                className='bg-blue-500 text-white px-4 py-2 rounded absolute bottom-4 left-4'> {/* Updated position */}
                     Buy
                 </a>
             </div>
