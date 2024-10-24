@@ -1,5 +1,5 @@
  
-const backendDomin = process.env.BACKEND_PORT ||"http://localhost:8000";
+const backendDomin = 'https://nestech-e-commerce-store-n6tz-backend.vercel.app' ||"http://localhost:8000";
 
 const SummaryApi = {
     signUP : {
