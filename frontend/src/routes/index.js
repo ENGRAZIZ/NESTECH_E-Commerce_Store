@@ -11,6 +11,21 @@ import CategoryProduct from '../pages/CategoryProduct'
 import ProductDetails from '../pages/ProductDetails'
 import Cart from '../pages/Cart'
 import SearchProduct from '../pages/SearchProduct'
+import CompletedOrders from '../pages/CompletedOrders'
+import PendingOrders from '../pages/PendingOrders'
+import ReturenedOrders from '../pages/ReturenedOrders'
+import TotalSales from '../pages/TotalSales'
+import RecievedPayments from '../pages/RecievedPayments'
+import PendingPayments from '../pages/PendingPayments'
+import TotalRevenue from '../pages/TotalRevenue'
+import CustomerDetails from '../pages/CustomerDetails'
+import Vendors from '../pages/Vendors'
+import ProductStock from '../pages/ProductStock'
+import Complains from '../pages/Complains'
+import AllViewers from '../pages/AllViewers'
+
+
+
 
 const router = createBrowserRouter([
     {
@@ -60,7 +75,50 @@ const router = createBrowserRouter([
                     {
                         path : "all-products",
                         element : <AllProducts/>
+                    },{
+                        path : "c-orders",
+                        element : <CompletedOrders/>
+                    },
+                    {
+                        path : "p-orders",
+                        element : <PendingOrders/>
+                    },{
+                        path : "r-orders",
+                        element : <ReturenedOrders/>
+                    },
+                    {
+                        path : "t-sales",
+                        element : <TotalSales/>
+                    }, {
+                        path : "r-payments",
+                        element : <RecievedPayments/>
+                    },
+                    {
+                        path : "p-payments",
+                        element : <PendingPayments/>
+                    },{
+                        path : "t-revenue",
+                        element : <TotalRevenue/>
+                    },
+                    {
+                        path : "customer-details",
+                        element : <CustomerDetails/>
+                    },{
+                        path : "vendors",
+                        element : <Vendors/>
+                    },
+                    {
+                        path : "product-stock",
+                        element : <ProductStock/>
+                    },{
+                        path : "complains",
+                        element : <Complains/>
+                    },
+                    {
+                        path : "all-viewers",
+                        element : <AllViewers/>
                     }
+
                 ]
             },
         ]

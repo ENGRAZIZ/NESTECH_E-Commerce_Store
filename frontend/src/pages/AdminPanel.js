@@ -35,16 +35,20 @@ const AdminPanel = () => {
 
         {/* Navigation */}
         <nav className='grid p-4'>
-            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
-            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>All Users</Link>
-            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>All Products</Link>
+            <Link to={"all-users"} className='px-2 py-1 hover:bg-slate-100'>Users</Link>
+            <Link to={"all-products"} className='px-2 py-1 hover:bg-slate-100'>Products</Link>
+            <Link to={"c-orders"} className='px-2 py-1 hover:bg-slate-100'>Completed Orders</Link>
+            <Link to={"p-orders"} className='px-2 py-1 hover:bg-slate-100'>Pending Orders</Link>
+            <Link to={"r-orders"} className='px-2 py-1 hover:bg-slate-100'>Returened Orders</Link>
+            <Link to={"t-sales"} className='px-2 py-1 hover:bg-slate-100'>Total Sales</Link>
+            <Link to={"r-payments"} className='px-2 py-1 hover:bg-slate-100'>Recieved Payments</Link>
+            <Link to={"p-payments"} className='px-2 py-1 hover:bg-slate-100'>Pending Payments</Link>
+            <Link to={"t-revenue"} className='px-2 py-1 hover:bg-slate-100'>Total Reveneu</Link>
+            <Link to={"customer-details"} className='px-2 py-1 hover:bg-slate-100'>CustomerDetails</Link>
+            <Link to={"vendors"} className='px-2 py-1 hover:bg-slate-100'>Vendors</Link>
+            <Link to={"product-stock"} className='px-2 py-1 hover:bg-slate-100'>Product Stock</Link>
+            <Link to={"complains"} className='px-2 py-1 hover:bg-slate-100'>Complains</Link>
+            <Link to={"all-viewers"} className='px-2 py-1 hover:bg-slate-100'>All Viewers</Link>
         </nav>
     </aside>
 

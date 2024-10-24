@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
+
+
 import bannerimage0 from '../assets/banner/banner (1).webp';
 import bannerimage1 from '../assets/banner/banner (2).jpg';
 import bannerimage2 from '../assets/banner/banner (3).jpg';
@@ -157,10 +161,10 @@ const BannerProduct = () => {
                 {/* Description Area */}
                 <h2 className='text-xl font-bold mb-2'>{productTitles[currentImage]}</h2>
                 <p className='mb-4'>{productDetails[currentImage]}</p>
-                <a href={'/'} 
+                <Link to={'/product-category/'} 
                 className='bg-blue-500 text-white px-4 py-2 rounded absolute bottom-4 left-4'> {/* Updated position */}
                     Buy
-                </a>
+                </Link>
             </div>
 
             <div className='flex-1 h-56 md:h-72 bg-slate-200 relative w-full'>
@@ -189,12 +193,9 @@ const BannerProduct = () => {
                                 style={{ transform: `translateX(-${currentImage * 100}%)` }}
                             >
                                 <img src={imageURL} alt={imageURL} className='w-full h-full object-fill' />
-                                <a
-                                    href={'/'}
-                                    className='absolute bottom-4 left-4 bg-blue-500 text-white px-4 py-2 rounded'
-                                >
+                                <Link to={'/'} className='absolute bottom-4 left-4 bg-blue-500 text-white px-4 py-2 rounded'>
                                     Buy
-                                </a>
+                                </Link>
                             </div>
                         );
                     })}

@@ -55,7 +55,7 @@ function App() {
       }}>
         <ToastContainer 
          position="top-right" // Change the position to right side
-         autoClose={5000} // Adjust auto-close time as needed
+         autoClose={2000} // Adjust auto-close time as needed
          hideProgressBar={false}
          newestOnTop={false}
          closeOnClick
@@ -66,7 +66,7 @@ function App() {
         />
         
         <Header/>
-        <main className='min-h-[calc(100vh-120px)] pt-16'>
+        <main className='min-h-[calc(100vh-120px)]'>
           <Outlet/>
         </main>
         <Footer/>
