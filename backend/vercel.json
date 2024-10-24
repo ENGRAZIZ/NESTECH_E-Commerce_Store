@@ -2,15 +2,15 @@
     "version": 2,
     "builds":[
         {
-            "src": "src/index.js",
-            "dest": "public/index.html",
-            "use": "@vercel/react"		
+            "src": "/index.js",
+            "dest": "routes/index.js",
+            "use": "@vercel/node"		
         }
     ],
     "routes":[
         {
             "src":"/(*)",
-            "dest":"public/index.html",
+            "dest":"routes/index.js",
             "methods":["Get","Post","OPTIONS"],
             "headers":{
                 "Access-Control-Allow-Origin": "*",
