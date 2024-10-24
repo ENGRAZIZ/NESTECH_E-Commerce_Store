@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/App.js",
+            "use": "@vercel/node"
+            
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/App.js",
+            "methods":["Get","POST","PUT","DELETE","PATCH","OPTIONS"],
+            "headers": {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": "true"
+            }	
+        }
+    ]
+}

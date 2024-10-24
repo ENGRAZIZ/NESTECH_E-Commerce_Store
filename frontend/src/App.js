@@ -13,25 +13,25 @@ import { setUserDetails } from './store/userSlice';
 
 function App() {
   const dispatch = useDispatch()
-  const [cartProductCount,setCartProductCount] = useState(0)
+  const [cartProductCount, setCartProductCount] = useState(0)
 
-  const fetchUserDetails = async()=>{
-      const dataResponse = await fetch(SummaryApi.current_user.url,{
-        method : SummaryApi.current_user.method,
-        credentials : 'include'
-      })
+  const fetchUserDetails = async () => {
+    const dataResponse = await fetch(SummaryApi.current_user.url, {
+      method: SummaryApi.current_user.method,
+      credentials: 'include'
+    })
 
-      const dataApi = await dataResponse.json()
+    const dataApi = await dataResponse.json()
 
-      if(dataApi.success){
-        dispatch(setUserDetails(dataApi.data))
-      }
+    if (dataApi.success) {
+      dispatch(setUserDetails(dataApi.data))
+    }
   }
 
-  const fetchUserAddToCart = async()=>{
-    const dataResponse = await fetch(SummaryApi.addToCartProductCount.url,{
-      method : SummaryApi.addToCartProductCount.method,
-      credentials : 'include'
+  const fetchUserAddToCart = async () => {
+    const dataResponse = await fetch(SummaryApi.addToCartProductCount.url, {
+      method: SummaryApi.addToCartProductCount.method,
+      credentials: 'include'
     })
 
     const dataApi = await dataResponse.json()
@@ -39,37 +39,37 @@ function App() {
     setCartProductCount(dataApi?.data?.count)
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     /**user Details */
     fetchUserDetails()
     /**user Details cart product */
     fetchUserAddToCart()
 
-  },[])
+  }, [])
   return (
     <>
       <Context.Provider value={{
-          fetchUserDetails, // user detail fetch 
-          cartProductCount, // current user add to cart product count,
-          fetchUserAddToCart
+        fetchUserDetails, // user detail fetch 
+        cartProductCount, // current user add to cart product count,
+        fetchUserAddToCart
       }}>
-        <ToastContainer 
-         position="top-right" // Change the position to right side
-         autoClose={2000} // Adjust auto-close time as needed
-         hideProgressBar={false}
-         newestOnTop={false}
-         closeOnClick
-         rtl={false}
-         pauseOnFocusLoss
-         draggable
-         pauseOnHover
+        <ToastContainer
+          position="top-right" // Change the position to right side
+          autoClose={2000} // Adjust auto-close time as needed
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
         />
-        
-        <Header/>
+
+        <Header />
         <main className='min-h-[calc(100vh-120px)]'>
-          <Outlet/>
+          <Outlet />
         </main>
-        <Footer/>
+        <Footer />
       </Context.Provider>
     </>
   );
