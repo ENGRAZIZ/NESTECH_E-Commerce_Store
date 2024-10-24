@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds":[
+        {
+            "src": "/index.js",
+            "dest": "public/index.html",
+            "use": "@vercel/node"		
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(*)",
+            "dest":"public/index.html",
+            "methods":["Get","Post","OPTIONS"],
+            "headers":{
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": "true"
+            }
+        }
+    ]
+}
