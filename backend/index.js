@@ -9,7 +9,7 @@ const app = express();
 
 // CORS setup
 app.use(cors({
-    origin: "https://nestech-e-commerce-store-userinterface.vercel.app" || 'http://localhost:3000',
+    origin: "https://nestech-e-commerce-store-b1wg17l5v.vercel.app" || 'http://localhost:3000',
     credentials: true,
 }));
 
