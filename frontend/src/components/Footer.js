@@ -90,7 +90,7 @@ const Footer = () => {
                     {/* Feedback Form Section */}
                     <div className='flex-1'>
                         <h3 className='text-lg font-semibold mb-4'>Feedback</h3>
-                        <form onSubmit={handleFeedbackSubmit} className='bg-gray-700 p-6 rounded-md'>
+                        <form onSubmit={handleFeedbackSubmit} className='bg-gray-700 p-6 rounded-md text-black'>
                             <input
                                 type="text"
                                 name="name"

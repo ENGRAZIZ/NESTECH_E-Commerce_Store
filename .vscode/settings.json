@@ -1,4 +1,7 @@
 {
     // This enables ESLint for the project
-    "eslint.enable": true
+    "eslint.enable": true,
+    "reactSnippets.settings.prettierEnabled": true,
+    "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+    "workbench.tree.renderIndentGuides": "none"
 }

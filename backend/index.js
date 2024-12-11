@@ -9,7 +9,7 @@ const app = express();
 
 // CORS setup
 app.use(cors({
-    origin: "https://nestech-e-commerce-store-b1wg17l5v.vercel.app" || 'http://localhost:3000',
+    origin: 'http://localhost:3000' || process.env.FRONTEND_URL,
     credentials: true,
 }));
 
@@ -27,7 +27,7 @@ const PORT = process.env.PORT || 8000;
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
-      });
+    });
 });
 
 // Global error handling middleware
